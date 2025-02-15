@@ -1,0 +1,10 @@
+The following CSS rule is causing unexpected behavior:
+
+```css
+div {
+  margin: 0 auto;
+  width: 50%;
+}
+```
+
+This code attempts to center a div horizontally by setting `margin: 0 auto;`. However, if the `div`'s parent element does not have a defined width, the `margin: 0 auto;` will not work correctly.  The `auto` margin requires a defined width on the parent to calculate the space needed for centering.
