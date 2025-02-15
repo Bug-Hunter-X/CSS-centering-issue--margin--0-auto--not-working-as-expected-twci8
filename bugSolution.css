@@ -1,0 +1,27 @@
+To fix this, you need to ensure the parent element of the `div` has a defined width. For example:
+
+```css
+.parent {
+  width: 80%; /* Or a fixed width */
+  margin: 0 auto;
+}
+
+div {
+  margin: 0 auto;
+  width: 50%;
+}
+```
+
+Alternatively, you can use flexbox or grid for more robust centering:
+
+```css
+.parent {
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  /* No margin: 0 auto; needed */
+  width: 50%;
+}
+```
